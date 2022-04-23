@@ -14,7 +14,7 @@ public class EmployeePayrollService {
         EmployeePayrollService employeePayrollService = new EmployeePayrollService(employeePayrollList);
         Scanner consoleInputReader = new Scanner(System.in);
         employeePayrollService.readEmployeePayrollData(consoleInputReader);
-        //employeePayrollService.writeEmployeePayrollData();
+        employeePayrollService.writeEmployeePayrollData();
 
     }
     private void readEmployeePayrollData(Scanner consoleInputReader){
@@ -27,8 +27,8 @@ public class EmployeePayrollService {
         employeePayrollList.add(new EmployeePayrollData(id,name,salary));
 
     }
-    //private void writeEmployeePayrollData(){
-        //System.out.println("\nwriting employee payroll roaster to console\n"+employeePayrollList);
+    private void writeEmployeePayrollData(){
+        System.out.println("\nwriting employee payroll roaster to console\n"+employeePayrollList);
 
     }
-//}
+}
